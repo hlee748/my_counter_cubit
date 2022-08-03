@@ -75,7 +75,7 @@ class MyHomePage extends StatelessWidget {
           SizedBox.fromSize(size: const Size(10.0, 0)),
           FloatingActionButton(
             onPressed: (){
-              context.watch<CounterCubit>().decrement();
+              context.read<CounterCubit>().decrement();
             },
             heroTag: 'decrement',
             child: const Icon(Icons.remove),)
